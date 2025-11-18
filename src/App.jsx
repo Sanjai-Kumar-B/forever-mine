@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Swal from "sweetalert2";
 import { BsVolumeUpFill, BsVolumeMuteFill } from "react-icons/bs";
 
-import Butterflies from './Butterflies.jsx';
 import MouseStealing from './MouseStealer.jsx';
 import Lovegif from "./assets/GifData/main_temp.gif";
 import heartGif from "./assets/GifData/happy.gif";
@@ -313,10 +312,9 @@ export default function Page() {
       <div
         className="fixed top-0 left-0 w-screen h-screen -z-10"
         style={{ 
-          backgroundColor: '#87CEEB'
+          background: 'linear-gradient(180deg, #87CEEB 0%, #B0E0E6 50%, #87CEEB 100%)'
         }}
       >
-        <Butterflies />
       </div>
 
       {noCount > 16 && noCount < 25 && yesPressed == false && <MouseStealing />}
