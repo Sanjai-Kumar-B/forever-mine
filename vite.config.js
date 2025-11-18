@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // Refer to this main Documentation - https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/forever-mine/'
+  base: process.env.NODE_ENV === 'production' ? '/forever-mine/' : '/'
 })
